@@ -1,0 +1,258 @@
+/* # Front-end Style Guide 
+
+## Layout The designs were created to the following widths: 
+- Mobile: 375px 
+- Desktop: 1440px 
+
+## Colors 
+
+### Primary 
+- Pink: hsl(322, 100%, 66%) 
+
+### Neutral 
+- Very Pale Cyan: hsl(193, 100%, 96%) 
+- Very Dark Cyan: hsl(192, 100%, 9%) 
+- Grayish Blue: hsl(208, 11%, 55%) 
+
+## Typography 
+
+### Body Copy 
+- Font size: 18px 
+
+### Headings 
+- Family: [Poppins](https: //fonts.google.com/specimen/Poppins)
+  - Weights: 600 ### Body, Call-to-actions - Family: [Open Sans](https: //fonts.google.com/specimen/Open+Sans)
+    - Weights: 400, 700 ## Icons For the social icons, you can use a font icon library. Some suggestions can be found below: - [Font Awesome](https: //fontawesome.com/)
+      - [IcoMoon](https: //icomoon.io/)
+        - [Ionicons](https: //ionicons.com/) */
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .a:hover {
+  color: hsl(190, 3%, 40%);
+  color: red;
+} */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: hsl(192, 100%, 9%);
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  border: none;
+  padding: 1.2rem 4.8rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  box-shadow: 0 1px 5px hsl(322, 100%, 66%);
+  font-size: 1.8rem;
+}
+
+button:hover {
+  background-color: hsl(322, 58%, 41%);
+  box-shadow: 0 1px 5px hsl(322, 58%, 41%);
+}
+
+.back {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(193, 100%, 96%);
+  padding: 2.4rem 6.4rem 6.4rem 6.4rem;
+  margin-top: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 3rem;
+}
+
+header a {
+  background-color: #fff;
+  text-decoration: none;
+  padding: 1.2rem 6.4rem;
+  border-radius: 10rem;
+  color: hsl(192, 100%, 9%);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.15s;
+}
+
+header a:hover {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(193, 100%, 96%);
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+.hero {
+  background-color: hsl(193, 100%, 96%);
+  margin-top: 5rem;
+  gap: 3.2rem;
+  width: 80rem;
+  margin: 0 auto;
+  margin-top: 4.8rem;
+}
+
+.mock {
+  height: 30rem;
+}
+
+
+.feature-sect {
+  width: 80rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.sec {
+  justify-self: end;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-1 {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2.4rem;
+}
+
+.box,
+.end {
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 2.4rem 3.2rem 3.2rem 6.4rem;
+  border-radius: 1rem;
+
+}
+
+.illust {
+  height: 20rem;
+}
+
+.end {
+  /* width: 40rem;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4.8rem 6.4rem;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 60%;
+}
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  position: relative;
+  margin-top: 30rem;
+  /* height: 50rem; */
+  padding: 15rem 6.4rem 6.4rem 6.4rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.footer a,
+.footer p {
+  color: hsl(193, 100%, 96%);
+}
+
+.footer a {
+  font-size: 1.4rem;
+}
+
+.cont {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.flex {
+  width: 40rem;
+  display: flex;
+  margin-bottom: 2.4rem;
+}
+
+.flex img {
+  height: 2.2rem;
+
+}
+
+.flex a {
+  margin-left: 2.4rem;
+  font-size: 1.4rem;
+}
+
+.logo {
+  height: 7rem;
+  fill: #fff;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3.2rem;
+  column-gap: 4.8rem;
+}
+
+.flex a:hover,
+.flex a:active,
+.div:hover,
+.div:active {
+  color: hsl(190, 5%, 55%);
+}
+
+.medias {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.media {
+  color: #fff;
+  height: 2.4rem;
+  width: 2.4rem;
+  border: 1px solid #fff;
+  padding: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.copy {
+  margin-left: 71%;
+  font-size: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
